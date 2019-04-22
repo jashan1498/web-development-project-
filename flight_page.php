@@ -88,12 +88,12 @@
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="places.html" class="nav-link">Places</a></li>
-	          <li class="nav-item"><a href="formpage.html" class="nav-link">Flight Booking</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="places.html" class="nav-link">Places</a></li>
+            <li class="nav-item"><a href="hotel.html" class="nav-link">Hotels</a></li>
+	          <li class="nav-item active"><a href="flight_page.php" class="nav-link">Flight Booking</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
@@ -237,13 +237,8 @@
             <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Information</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">About Us</a></li>
-                <li><a href="#" class="py-2 d-block">Online enquiry</a></li>
-                <li><a href="#" class="py-2 d-block">Call Us</a></li>
-                <li><a href="#" class="py-2 d-block">General enquiries</a></li>
-                <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
-                <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-                <li><a href="#" class="py-2 d-block">Refund policy</a></li>
+                <li><a href="about.html" class="py-2 d-block">About Us</a></li>
+                <li><a href="contact.html" class="py-2 d-block">Online enquiry</a></li>        
               </ul>
             </div>
           </div>
@@ -251,12 +246,9 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Experience</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Beach</a></li>
-                <li><a href="#" class="py-2 d-block">Adventure</a></li>
-                <li><a href="#" class="py-2 d-block">Wildlife</a></li>
-                <li><a href="#" class="py-2 d-block">Honeymoon</a></li>
-                <li><a href="#" class="py-2 d-block">Nature</a></li>
-                <li><a href="#" class="py-2 d-block">Party</a></li>
+                <li><a href="hotel.html" class="py-2 d-block">Hotels</a></li>
+                <li><a href="places.html" class="py-2 d-block">Place</a></li>
+                <li><a href="flight.html" class="py-2 d-block">Flight</a></li>                
               </ul>
             </div>
           </div>
@@ -265,9 +257,9 @@
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@sourabh .com</span></a></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">School of Computer Science, Wuhan University, Wuhan, Hubei, PRC</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+86  131 6417 4567</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">boom@boomapps.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
