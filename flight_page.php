@@ -92,7 +92,6 @@
 	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="places.html" class="nav-link">Places</a></li>
-            <li class="nav-item"><a href="hotel.html" class="nav-link">Hotels</a></li>
 	          <li class="nav-item active"><a href="flight_page.php" class="nav-link">Flight Booking</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
@@ -246,7 +245,6 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Experience</h2>
               <ul class="list-unstyled">
-                <li><a href="hotel.html" class="py-2 d-block">Hotels</a></li>
                 <li><a href="places.html" class="py-2 d-block">Place</a></li>
                 <li><a href="flight.html" class="py-2 d-block">Flight</a></li>                
               </ul>
