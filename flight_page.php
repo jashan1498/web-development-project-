@@ -26,56 +26,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-      <?php
-      include_once "includes/database_connect.php";
 
-
-
-
-
-      if (isset($_POST["submit"])) {
-        $from =  $_POST["from"];
-        $where =  $_POST["where"];
-        $ddate =  $_POST["ddate"];
-        $adate =  $_POST["adate"];
-        $travellers =  $_POST['travelers'];
-        $contact =  $_POST['contactnumber'];
-        $email =  $_POST['email'];
-
-
-        if (empty($name)) {
-            $name =  "Not Defined";
-        }
-        if (empty($where)) {
-          $where =  "Not Defined";
-        }
-        if (empty($ddate)) {
-          $ddate =  "";
-        }
-        if (empty($adate)) {
-          $adate =  "";
-        }
-        if (empty($travellers)) {
-          $travellers =  0;
-        }
-        if (empty($contact)) {
-          $contact = 0;
-        }
-        if (empty($email)) {
-          $email = "Not Defined";
-        }
-
-        $sql = "INSERT INTO `newcustomer`(`depart from`, `destination point`, `departDate`, `arrivalDate`, `travellers`, `Phone`, `Email`) VALUES ($from,'','','','','','')";
-
-        $result = mysqli_query($conn,$sql);
-
-
-        // add all this info to database
-        // thats all
-
-}
-
-      ?>
 
   </head>
   <body>
@@ -117,7 +68,6 @@
     		<div class="row no-gutters">
           <div class="col-md-12 nav-link-wrap">
             <div class="nav nav-pills justify-content-center text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <!-- <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Flight</a> -->
 
               </div>
           </div>
@@ -126,7 +76,7 @@
             <div class="tab-content p-4 px-5" id="v-pills-tabContent">
 
               <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
-              	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="search-destination">
+              	<form action="Flight_Page_Buy.php" method="post" class="search-destination">
               		<div class="row">
               			<div class="col-md align-items-end">
               				<div class="form-group">

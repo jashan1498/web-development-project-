@@ -1,9 +1,9 @@
-<?=
+<?php
 
 $ServerName = "localhost";
 $Username = "root";
 $Password = "";
-$dbName = "customer";
+$dbName = "webdevproject";
 
 $conn = mysqli_connect($ServerName,$Username,$Password,$dbName);
 
