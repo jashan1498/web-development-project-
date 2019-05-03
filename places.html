@@ -1,470 +1,426 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Adventure - Free Bootstrap 4 Template by Colorlib</title>
+<html>
+
+<head>
     <meta charset="utf-8">
+    <!--Bootstrap and Jquery-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
-    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Adventure</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <title>Flight Finder - Web Development Project</title>
+    <style>
+        .navbar-color-light {
+            color: #c1c1c1 !important;
+        }
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item active"><a href="places.html" class="nav-link">Places</a></li>
-	          <li class="nav-item"><a href="flight_page.php" class="nav-link">Flight Booking</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
-    
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-9 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Places</span></p>
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Destinations</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-		
-		<section class="ftco-section">
-      <div class="container">
-        <div class="row">
-        	<div class="col-lg-3 sidebar order-md-last ftco-animate">
-        		<div class="sidebar-wrap ftco-animate">
-        			<h3 class="heading mb-4">Find City</h3>
-        			<form action="#">
-        				<div class="fields">
-		              <div class="form-group">
-		                <input type="text" class="form-control" placeholder="Destination, City">
-		              </div>
-		              <div class="form-group">
-		                <div class="select-wrap one-third">
-	                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-	                    <select name="" id="" class="form-control" placeholder="Keyword search">
-	                      <option value="">Select Location</option>
-	                      <option value="">San Francisco USA</option>
-	                      <option value="">Berlin Germany</option>
-	                      <option value="">Lodon United Kingdom</option>
-	                      <option value="">Paris Italy</option>
-	                    </select>
-	                  </div>
-		              </div>
-		              <div class="form-group">
-		                <input type="text" id="checkin_date" class="form-control checkin_date" placeholder="Date from">
-		              </div>
-		              <div class="form-group">
-		                <input type="text" id="checkout_date" class="form-control checkout_date" placeholder="Date to">
-		              </div>
-		              <div class="form-group">
-		              	<div class="range-slider">
-		              		<span>
-										    <input type="number" value="25000" min="0" max="120000"/>	-
-										    <input type="number" value="50000" min="0" max="120000"/>
-										  </span>
-										  <input value="1000" min="0" max="120000" step="500" type="range"/>
-										  <input value="50000" min="0" max="120000" step="500" type="range"/>
-										  </svg>
-										</div>
-		              </div>
-		              <div class="form-group">
-		                <input type="submit" value="Search" class="btn btn-primary py-3 px-5">
-		              </div>
-		            </div>
-	            </form>
-        		</div>
-        		<div class="sidebar-wrap ftco-animate">
-        			<h3 class="heading mb-4">Star Rating</h3>
-        			<form method="post" class="star-rating">
-							  <div class="form-check">
-									<input type="checkbox" class="form-check-input" id="exampleCheck1">
-									<label class="form-check-label" for="exampleCheck1">
-										<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span></p>
-									</label>
-							  </div>
-							  <div class="form-check">
-						      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						      <label class="form-check-label" for="exampleCheck1">
-						    	   <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i></span></p>
-						      </label>
-							  </div>
-							  <div class="form-check">
-						      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						      <label class="form-check-label" for="exampleCheck1">
-						      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
-						     </label>
-							  </div>
-							  <div class="form-check">
-							    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						      <label class="form-check-label" for="exampleCheck1">
-						      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
-						      </label>
-							  </div>
-							  <div class="form-check">
-						      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-						      <label class="form-check-label" for="exampleCheck1">
-						      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
-							    </label>
-							  </div>
-							</form>
-        		</div>
-          </div><!-- END-->
-          <div class="col-lg-9">
-          	<div class="row">
-          		<div class="col-sm col-md-6 col-lg-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-3.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-link"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Paris, Italy</a></h3>
-				    						<p class="rate">
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star-o"></i>
-				    							<span>8 Rating</span>
-				    						</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">$200</span>
-		    							</div>
-		    						</div>
-		    						<p>Far far away, behind the word mountains, far from the countries</p>
-		    						<p class="days"><span>2 days 3 nights</span></p>
-		    						<hr>
-		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-		    							<span class="ml-auto"><a href="#">Discover</a></span>
-		    						</p>
-		    					</div>
-		    				</div>
-		    			</div>
-		    			<div class="col-sm col-md-6 col-lg-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-4.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-link"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Paris, Italy</a></h3>
-				    						<p class="rate">
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star-o"></i>
-				    							<span>8 Rating</span>
-				    						</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">$200</span>
-		    							</div>
-		    						</div>
-		    						<p>Far far away, behind the word mountains, far from the countries</p>
-		    						<p class="days"><span>2 days 3 nights</span></p>
-		    						<hr>
-		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-		    							<span class="ml-auto"><a href="#">Discover</a></span>
-		    						</p>
-		    					</div>
-		    				</div>
-		    			</div>
-		    			<div class="col-sm col-md-6 col-lg-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-1.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-link"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Paris, Italy</a></h3>
-				    						<p class="rate">
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star-o"></i>
-				    							<span>8 Rating</span>
-				    						</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">$200</span>
-		    							</div>
-		    						</div>
-		    						<p>Far far away, behind the word mountains, far from the countries</p>
-		    						<p class="days"><span>2 days 3 nights</span></p>
-		    						<hr>
-		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-		    							<span class="ml-auto"><a href="#">Discover</a></span>
-		    						</p>
-		    					</div>
-		    				</div>
-		    			</div>
-		    			<div class="col-sm col-md-6 col-lg-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-2.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-link"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Paris, Italy</a></h3>
-				    						<p class="rate">
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star-o"></i>
-				    							<span>8 Rating</span>
-				    						</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">$200</span>
-		    							</div>
-		    						</div>
-		    						<p>Far far away, behind the word mountains, far from the countries</p>
-		    						<p class="days"><span>2 days 3 nights</span></p>
-		    						<hr>
-		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-		    							<span class="ml-auto"><a href="#">Discover</a></span>
-		    						</p>
-		    					</div>
-		    				</div>
-		    			</div>
-		    			<div class="col-sm col-md-6 col-lg-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-5.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-link"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Paris, Italy</a></h3>
-				    						<p class="rate">
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star-o"></i>
-				    							<span>8 Rating</span>
-				    						</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">$200</span>
-		    							</div>
-		    						</div>
-		    						<p>Far far away, behind the word mountains, far from the countries</p>
-		    						<p class="days"><span>2 days 3 nights</span></p>
-		    						<hr>
-		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-		    							<span class="ml-auto"><a href="#">Discover</a></span>
-		    						</p>
-		    					</div>
-		    				</div>
-		    			</div>
-		    			<div class="col-sm col-md-6 col-lg-4 ftco-animate">
-		    				<div class="destination">
-		    					<a href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/destination-6.jpg);">
-		    						<div class="icon d-flex justify-content-center align-items-center">
-		    							<span class="icon-link"></span>
-		    						</div>
-		    					</a>
-		    					<div class="text p-3">
-		    						<div class="d-flex">
-		    							<div class="one">
-				    						<h3><a href="#">Paris, Italy</a></h3>
-				    						<p class="rate">
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star"></i>
-				    							<i class="icon-star-o"></i>
-				    							<span>8 Rating</span>
-				    						</p>
-			    						</div>
-			    						<div class="two">
-			    							<span class="price">$200</span>
-		    							</div>
-		    						</div>
-		    						<p>Far far away, behind the word mountains, far from the countries</p>
-		    						<p class="days"><span>2 days 3 nights</span></p>
-		    						<hr>
-		    						<p class="bottom-area d-flex">
-		    							<span><i class="icon-map-o"></i> San Franciso, CA</span> 
-		    							<span class="ml-auto"><a href="#">Discover</a></span>
-		    						</p>
-		    					</div>
-		    				</div>
-		    			</div>
-          	</div>
-          	<div class="row mt-5">
-		          <div class="col text-center">
-		            <div class="block-27">
-		              <ul>
-		                <li><a href="#">&lt;</a></li>
-		                <li class="active"><span>1</span></li>
-		                <li><a href="#">2</a></li>
-		                <li><a href="#">3</a></li>
-		                <li><a href="#">4</a></li>
-		                <li><a href="#">5</a></li>
-		                <li><a href="#">&gt;</a></li>
-		              </ul>
-		            </div>
-		          </div>
-		        </div>
-          </div> <!-- .col-md-8 -->
-        </div>
-      </div>
-    </section> <!-- .section -->
+        .navbar-color-dark {
+            color: #393939 !important;
+        }
 
-		<section class="ftco-section-parallax">
-      <div class="parallax-img d-flex align-items-center">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-              <h2>Subcribe to our Newsletter</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-              <div class="row d-flex justify-content-center mt-5">
-                <div class="col-md-8">
-                  <form action="#" class="subscribe-form">
-                    <div class="form-group d-flex">
-                      <input type="text" class="form-control" placeholder="Enter email address">
-                      <input type="submit" value="Subscribe" class="submit px-3">
-                    </div>
-                  </form>
+        .bg-navbar {
+            background-color: #111111;
+        }
+
+        #jumbo {
+            background-image: url('img/bg_1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .footer-color {
+            background-color: #222831
+        }
+
+        .footer-color p {
+            color: rgba(255, 255, 255, 0.7)
+        }
+
+        .footer-color a {
+            color: rgba(255, 255, 255, 0.7)
+        }
+
+        .footer-color h5 {
+            color: white;
+        }
+
+        .transparent-navbar {
+            background-color: transparent;
+        }
+
+        #subscribe {
+            background-color: #1e90ff;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        #subscribe * {
+            color: #f1f2f6;
+            text-align: center;
+        }
+
+        #email {
+            background-color: #1e90ff;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 0px;
+            width: 300px;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.7) !important
+        }
+
+        #email::placeholder {
+            color: rgba(255, 255, 255, 0.7)
+        }
+
+        #submitBtn {
+            background-color: #1e90ff;
+            border-right: 1px solid rgba(255, 255, 255, 0.7);
+            border-top: 1px solid rgba(255, 255, 255, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 0px;
+        }
+
+        .destination-image {
+            width: 250px;
+            height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .destinations {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .page-indicators {
+            display: inline-block;
+            border: 1px solid #1e90ff;
+            text-align: center;
+            padding: 10px;
+
+            width: 20px;
+            height: 20px;
+        }
+
+        .page-indicator-wrapper ul {
+            list-style-type: none;
+        }
+
+        .page-indicator-wrapper li {
+            display: inline-block;
+        }
+
+        .page-indicator-wrapper a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #1e90ff;
+            border-radius: 50%;
+
+        }
+
+        .page-indicator-wrapper a:hover {
+            text-decoration: none;
+        }
+
+        .destination-detail {
+            margin-left: 10px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            h1 {
+                font-size: 6em;
+            }
+
+            h3 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function () {
+
+            var jumbo = document.getElementById("jumbo");
+            jumbo.style.width = window.innerWidth + "px";
+            jumbo.style.height = window.innerHeight + "px";
+            AOS.init({
+                duration: 800
+            })
+        }
+        window.onresize = function () {
+            var jumbo = document.getElementById("jumbo");
+            jumbo.style.height = window.innerHeight + "px";
+            jumbo.style.width = window.innerWidth + "px"
+        }
+        window.onscroll = function (e) {
+            if (window.scrollY > 220) {
+                $('#navbarId a').removeClass("navbar-color-dark")
+                $('#navbarId a').addClass("navbar-color-light");
+                $('#navbarId').removeClass("animated fadeInUp")
+                $('#navbarId').addClass("fixed-top animated fadeInDown");
+                $('#navbarId').removeClass("transparent-navbar")
+            }
+            if (window.scrollY < 220) {
+                $('#navbarId a').removeClass("navbar-color-light")
+                $('#navbarId a').addClass("navbar-color-dark");
+                $('#navbarId').removeClass("fixed-top animated fadeInDown")
+                $('#navbarId').addClass("transparent-navbar")
+                $("#navbarId").addClass("animated fadeInUp")
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid" id="jumbo">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navbar transparent-navbar" id="navbarId">
+            <div class="container">
+                <a class="navbar-brand navbar-color-dark" href="#">Flight Finder</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link navbar-color-dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="places.html">Places</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="flight_search_form.php">Flight Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
             </div>
-          </div>
+        </nav>
+        <!--Body-->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-7 col-md-7" style="margin-top: 150px;">
+                    <h1 data-aos="fade-up">Destinations</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-7 col-md-7">
+                    <h3 data-aos="fade-up">Currently Most Popular Destinations</h3>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </section>
-
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Adventure</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="row">
+                    <div data-aos="fade-up" class="col-xl-3 destinations">
+                        <div style="background-image: url('img/destination-3.jpg')" class="destination-image"></div>
+                        <div class="destination-detail">
+                            <h4>Paris, italy</h4>
+                            <div class="review">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star-o"></i>
+                                <p>8 Ratings</p>
+                            </div>
+                            <hr>
+                            <button type="button" class="btn btn-primary">Find Tickets</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-xl-3 destinations">
+                        <div style="background-image: url('img/destination-3.jpg')" class="destination-image"></div>
+                        <div class="destination-detail">
+                            <h4>Paris, italy</h4>
+                            <div class="review">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star-o"></i>
+                                <p>8 Ratings</p>
+                            </div>
+                            <hr>
+                            <button type="button" class="btn btn-primary">Find Tickets</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-xl-3 destinations">
+                        <div style="background-image: url('img/destination-3.jpg')" class="destination-image"></div>
+                        <div class="destination-detail">
+                            <h4>Paris, italy</h4>
+                            <div class="review">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star-o"></i>
+                                <p>8 Ratings</p>
+                            </div>
+                            <hr>
+                            <button type="button" class="btn btn-primary">Find Tickets</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-xl-3 destinations">
+                        <div style="background-image: url('img/destination-3.jpg')" class="destination-image"></div>
+                        <div class="destination-detail">
+                            <h4>Paris, italy</h4>
+                            <div class="review">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star-o"></i>
+                                <p>8 Ratings</p>
+                            </div>
+                            <hr>
+                            <button type="button" class="btn btn-primary">Find Tickets</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-xl-3 destinations">
+                        <div style="background-image: url('img/destination-3.jpg')" class="destination-image"></div>
+                        <div class="destination-detail">
+                            <h4>Paris, italy</h4>
+                            <div class="review">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star-o"></i>
+                                <p>8 Ratings</p>
+                            </div>
+                            <hr>
+                            <button type="button" class="btn btn-primary">Find Tickets</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-xl-3 destinations">
+                        <div style="background-image: url('img/destination-3.jpg')" class="destination-image"></div>
+                        <div class="destination-detail">
+                            <h4>Paris, italy</h4>
+                            <div class="review">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star-o"></i>
+                                <p>8 Ratings</p>
+                            </div>
+                            <hr>
+                            <button type="button" class="btn btn-primary">Find Tickets</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-xl-3 destinations">
+                        <div style="background-image: url('img/destination-3.jpg')" class="destination-image"></div>
+                        <div class="destination-detail">
+                            <h4>Paris, italy</h4>
+                            <div class="review">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star-o"></i>
+                                <p>8 Ratings</p>
+                            </div>
+                            <hr>
+                            <button type="button" class="btn btn-primary">Find Tickets</button>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-xl-3 destinations">
+                        <div style="background-image: url('img/destination-3.jpg')" class="destination-image"></div>
+                        <div class="destination-detail">
+                            <h4>Paris, italy</h4>
+                            <div class="review">
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star-o"></i>
+                                <p>8 Ratings</p>
+                            </div>
+                            <hr>
+                            <button type="button" class="btn btn-primary">Find Tickets</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="row justify-content-center">
+                    <div class="col-xl-4 page-indicator-wrapper">
+                        <ul>
+                            <li><a href="#">&lt;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&gt;</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Information</h2>
-              <ul class="list-unstyled">
-                <li><a href="about.html" class="py-2 d-block">About Us</a></li>
-                <li><a href="contact.html" class="py-2 d-block">Online enquiry</a></li>        
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Experience</h2>
-              <ul class="list-unstyled">
-                <li><a href="places.html" class="py-2 d-block">Place</a></li>
-                <li><a href="flight.html" class="py-2 d-block">Flight</a></li>                
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">School of Computer Science, Wuhan University, Wuhan, Hubei, PRC</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+86  131 6417 4567</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">boom@boomapps.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
         </div>
+    </div>
+    <div class="container-fluid" id="subscribe">
+        <div class="row justify-content-center">
+            <div data-aos="fade-up" class="col-xl-6">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Please enter your email address below</p>
+                <form class="form-inline justify-content-center">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email Address">
+                    </div>
+                    <button type="submit" class="btn" id="submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid footer-color" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Adventure</h5>
+                    <p>Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Information</h5>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="contact.html">Online Enquiry</a></p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Experience</h5>
+                    <p><a href="places.html">Places</a></p>
+                    <p><a href="flight_page.php">Flight</a></p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Have a Questions?</h5>
+                    <p>School of Computer Science, Wuhan University, Wuhan,
+                        Hubei, PRC</p>
+                    <p>+86 131 6417 4567</p>
+                    <p>boom@boomapps.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
-      </div>
-    </footer>
-    
-  
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-    
-  </body>
 </html>

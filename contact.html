@@ -1,210 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Adventure - Free Bootstrap 4 Template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+<html>
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+<head>
+    <meta charset="utf-8">
+    <!--Bootstrap and Jquery-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon/font/flaticon.css">
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <title>Flight Finder - Web Development Project</title>
+    <style>
+        .navbar-color-light {
+            color: #c1c1c1 !important;
+        }
 
-    <link rel="stylesheet" href="css/aos.css">
+        .navbar-color-dark {
+            color: #393939 !important;
+        }
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+        .bg-navbar {
+            background-color: #111111;
+        }
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+        #jumbo {
+            background-image: url('img/bg_1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
 
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Adventure</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+        .footer-color {
+            background-color: #222831
+        }
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="places.html" class="nav-link">Places</a></li>
-	          <li class="nav-item"><a href="flight_page.php" class="nav-link">Flight Booking</a></li>
-	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
-    
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-9 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Blog</span></p>
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Contact</h1>
-          </div>
+        .footer-color p {
+            color: rgba(255, 255, 255, 0.7)
+        }
+
+        .footer-color a {
+            color: rgba(255, 255, 255, 0.7)
+        }
+
+        .footer-color h5 {
+            color: white;
+        }
+
+        .transparent-navbar {
+            background-color: transparent;
+        }
+
+        #flight-finder-left {
+            background-image: url("img/bg_2.jpg");
+            height: 400px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        #team-member {
+            background-color: #1e90ff;
+            padding-bottom: 100px;
+        }
+
+        #subscribe {
+            background-color: #1e90ff;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        #subscribe * {
+            color: #f1f2f6;
+            text-align: center;
+        }
+
+        #team-member * {
+            color: #f1f2f6;
+        }
+
+        .owl-stage-outer {
+            padding-top: 3rem;
+        }
+
+        #four-features {
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+
+        #submitBtn {
+            background-color: #1e90ff;
+            border-right: 1px solid rgba(255, 255, 255, 0.7);
+            border-top: 1px solid rgba(255, 255, 255, 0.7);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 0px;
+        }
+
+        .icon {
+            font-size: 4rem;
+        }
+
+        #email {
+            background-color: #1e90ff;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 0px;
+            width: 300px;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.7) !important
+        }
+
+        #email::placeholder {
+            color: rgba(255, 255, 255, 0.7)
+        }
+
+        #contact-information-container {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        #contact-information-container h4 {
+            margin-bottom: 40px;
+        }
+
+        #leave-message {
+            margin-bottom: 60px;
+        }
+
+        #leave-message-container input {
+            border-radius: 0px;
+            margin-bottom: 20px;
+        }
+
+        #leave-message-container textarea {
+            border-radius: 0px;
+            margin-bottom: 20px;
+            min-height: 100px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            h1 {
+                font-size: 6em;
+            }
+
+            h3 {
+                font-size: 2.5em;
+            }
+
+            .team-member-carousel {
+                height: 400px;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function () {
+
+            $(".owl-carousel").owlCarousel({
+                margin: 10,
+                loop: true
+            });
+            var jumbo = document.getElementById("jumbo");
+            jumbo.style.width = window.innerWidth + "px";
+            jumbo.style.height = window.innerHeight + "px";
+            AOS.init({
+                duration: 800
+            })
+        }
+        window.onresize = function () {
+            var jumbo = document.getElementById("jumbo");
+            jumbo.style.height = window.innerHeight + "px";
+            jumbo.style.width = window.innerWidth + "px"
+        }
+        window.onscroll = function (e) {
+            if (window.scrollY > 220) {
+                $('#navbarId a').removeClass("navbar-color-dark")
+                $('#navbarId a').addClass("navbar-color-light");
+                $('#navbarId').removeClass("animated fadeInUp")
+                $('#navbarId').addClass("fixed-top animated fadeInDown");
+                $('#navbarId').removeClass("transparent-navbar")
+            }
+            if (window.scrollY < 220) {
+                $('#navbarId a').removeClass("navbar-color-light")
+                $('#navbarId a').addClass("navbar-color-dark");
+                $('#navbarId').removeClass("fixed-top animated fadeInDown")
+                $('#navbarId').addClass("transparent-navbar")
+                $("#navbarId").addClass("animated fadeInUp")
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid" id="jumbo">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navbar transparent-navbar" id="navbarId">
+            <div class="container">
+                <a class="navbar-brand navbar-color-dark" href="#">Flight Finder</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link navbar-color-dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="places.html">Places</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="flight_search_form.php">Flight Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Body-->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-7 col-md-7" style="margin-top: 150px;">
+                    <h1 data-aos="fade-up">Contact</h1>
+                </div>
+            </div>
+
         </div>
-      </div>
+
     </div>
 
-    <section class="ftco-section contact-section ftco-degree-bg">
-      <div class="container">
-        <div class="row d-flex mb-5 contact-info">
-          <div class="col-md-12 mb-4">
-            <h2 class="h4">Contact Information</h2>
-          </div>
-          <div class="w-100"></div>
-          <div class="col-md-3">
-            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-          </div>
-          <div class="col-md-3">
-            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-          </div>
-          <div class="col-md-3">
-            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-          </div>
-          <div class="col-md-3">
-            <p><span>Website</span> <a href="#">yoursite.com</a></p>
-          </div>
-        </div>
-        <div class="row block-9">
-          <div class="col-md-6 order-md-last pr-md-5">
-            <form action="#">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-          
-          </div>
-
-          <div class="col-md-6">
-          	<div id="map"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-		<section class="ftco-section-parallax">
-      <div class="parallax-img d-flex align-items-center">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-              <h2>Subcribe to our Newsletter</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-              <div class="row d-flex justify-content-center mt-5">
-                <div class="col-md-8">
-                  <form action="#" class="subscribe-form">
-                    <div class="form-group d-flex">
-                      <input type="text" class="form-control" placeholder="Enter email address">
-                      <input type="submit" value="Subscribe" class="submit px-3">
+    <div class="container-fluid" id="contact-information-container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <h4 data-aos="fade-up">Contact Information</h4>
+                <div class="row">
+                    <div data-aos="fade-up" class="col-xl-3">
+                        <p>Address: Wuhan University International Foreign Student Dormitory, Wuhan, Hubei, PRC</p>
                     </div>
-                  </form>
+                    <div data-aos="fade-up" class="col-xl-3">
+                        <p>Phone: +8613112345678</p>
+                    </div>
+                    <div data-aos="fade-up" class="col-xl-3">
+                        <p>Email: jashan_deep@hubeiboomcorps.cn</p>
+                    </div>
+                    <div data-aos="fade-up" class="col-xl-3">
+                        <p>Website: wuh.boomcorps.cn</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+    <div data-aos="fade-up" class="container-fluid" id="leave-message">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <div class="container-fluid h-100">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-xl-6">
+                            <h4 class="text-center">Send us a message!</h4>
+                            <img src="img/gmail.png" class="img-fluid mx-auto d-block">
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="form-group" id="leave-message-container">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
+                                <input type="email" name="email" id="email-message" class="form-control"
+                                    placeholder="Your Email">
+                                <input type="text" name="subject" id="subject" class="form-control"
+                                    placeholder="Subject">
+                                <textarea class="form-control" placeholder="Message"></textarea>
+                                <button type="button" class="btn">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Adventure</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
             </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Information</h2>
-              <ul class="list-unstyled">
-                <li><a href="about.html" class="py-2 d-block">About Us</a></li>
-                <li><a href="contact.html" class="py-2 d-block">Online enquiry</a></li>        
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Experience</h2>
-              <ul class="list-unstyled">
-                <li><a href="places.html" class="py-2 d-block">Place</a></li>
-                <li><a href="flight.html" class="py-2 d-block">Flight</a></li>                
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">School of Computer Science, Wuhan University, Wuhan, Hubei, PRC</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+86  131 6417 4567</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">boom@boomapps.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
         </div>
+    </div>
+    <div class="container-fluid" id="subscribe">
+        <div class="row justify-content-center">
+            <div data-aos="fade-up" class="col-xl-6">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Please enter your email address below</p>
+                <form class="form-inline justify-content-center">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email Address">
+                    </div>
+                    <button type="submit" class="btn" id="submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid footer-color" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Adventure</h5>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Information</h5>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="contact.html">Online Enquiry</a></p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Experience</h5>
+                    <p><a href="places.html">Places</a></p>
+                    <p><a href="flight_page.php">Flight</a></p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Have a Questions?</h5>
+                    <p>School of Computer Science, Wuhan University, Wuhan, Hubei, PRC</p>
+                    <p>+86 131 6417 4567</p>
+                    <p>boom@boomapps.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
-      </div>
-    </footer>
-    
-  
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-    
-  </body>
 </html>
