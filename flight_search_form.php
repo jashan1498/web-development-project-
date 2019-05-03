@@ -421,14 +421,14 @@ include_once "includes/database_connect.php";
 							<div class="date">
 								<div class="depart">
 									<h3>Depart</h3>
-									<input id="" name="ddate" type="date" style="height:35px;" value="mm/dd/yyyy"
+									<input id="" name="ddate" type="date" style="height:45px;" value="mm/dd/yyyy"
 										onfocus="this.value = '';"
 										onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
 
 								</div>
 								<div class="return">
 									<h3>Return</h3>
-									<input id="datepicker1" name="adate" type="date" style="height:35px;"
+									<input id="datepicker1" name="adate" type="date" style="height:45px;"
 										value="mm/dd/yyyy" onfocus="this.value = '';"
 										onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
 								</div>
@@ -493,7 +493,7 @@ include_once "includes/database_connect.php";
 							<div class="date">
 								<div class="depart">
 									<h3>Depart</h3>
-									<input class="date" id="datepicker2" name="ddate" type="date" style="height:35px"
+									<input class="date" id="datepicker2" name="ddate" type="date" style="height:45px"
 										value="mm/dd/yyyy" onfocus="this.value = '';"
 										onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
 									<span class="checkbox1">
