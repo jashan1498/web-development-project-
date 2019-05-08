@@ -41,13 +41,6 @@ include_once "includes/database_connect.php";
 			background-color: #111111;
 		}
 
-		#jumbo {
-			background-image: url('img/bg_1.jpg');
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
-		}
-
 		.footer-color {
 			background-color: #222831
 		}
@@ -213,29 +206,21 @@ include_once "includes/database_connect.php";
 				margin: 10,
 				loop: true
 			});
-			var jumbo = document.getElementById("jumbo");
-			jumbo.style.width = window.innerWidth + "px";
-			jumbo.style.height = window.innerHeight + "px";
 			AOS.init({
 				duration: 800
 			})
 		}
-		window.onresize = function () {
-			var jumbo = document.getElementById("jumbo");
-			jumbo.style.height = window.innerHeight + "px";
-			jumbo.style.width = window.innerWidth + "px"
-		}
 		window.onscroll = function (e) {
 			if (window.scrollY > 220) {
-				$('#navbarId a').removeClass("navbar-color-dark")
-				$('#navbarId a').addClass("navbar-color-light");
+				//$('#navbarId a').removeClass("navbar-color-dark")
+				//$('#navbarId a').addClass("navbar-color-light");
 				$('#navbarId').removeClass("animated fadeInUp")
 				$('#navbarId').addClass("fixed-top animated fadeInDown");
 				$('#navbarId').removeClass("transparent-navbar")
 			}
 			if (window.scrollY < 220) {
-				$('#navbarId a').removeClass("navbar-color-light")
-				$('#navbarId a').addClass("navbar-color-dark");
+				//$('#navbarId a').removeClass("navbar-color-light")
+				//$('#navbarId a').addClass("navbar-color-dark");
 				$('#navbarId').removeClass("fixed-top animated fadeInDown")
 				$('#navbarId').addClass("transparent-navbar")
 				$("#navbarId").addClass("animated fadeInUp")
@@ -351,7 +336,7 @@ include_once "includes/database_connect.php";
 		<!--Navbar-->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-navbar transparent-navbar" id="navbarId">
 			<div class="container">
-				<a class="navbar-brand navbar-color-dark" href="#">Flight Finder</a>
+				<a class="navbar-brand" href="#">Flight Finder</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
 					aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -359,38 +344,25 @@ include_once "includes/database_connect.php";
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
-							<a class="nav-link navbar-color-dark" href="index.html">Home</a>
+							<a class="nav-link" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link navbar-color-dark" href="about.html">About</a>
+							<a class="nav-link" href="about.html">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link navbar-color-dark" href="places.html">Places</a>
+							<a class="nav-link" href="places.html">Places</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link navbar-color-dark" href="flight_search_form.php">Flight Booking</a>
+							<a class="nav-link" href="flight_search_form.php">Flight Booking</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link navbar-color-dark" href="contact.html">Contact</a>
+							<a class="nav-link" href="contact.html">Contact</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<!--Body-->
-		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<div class="col-xl-8 col-lg-7 col-md-7" style="margin-top: 150px;">
-					<h1 style="text-align: left;" data-aos="fade-up">Flight Ticket Booking</h1>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-xl-8 col-lg-7 col-md-7">
-					<h3 data-aos="fade-up">Find the next bargain of century here!</h3>
-				</div>
-			</div>
-
-		</div>
 	</div>
 	<div class="main-agileinfo">
 		<div class="sap_tabs">
