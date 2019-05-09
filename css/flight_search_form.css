@@ -216,7 +216,7 @@ input[type="checkbox"]{
 .value {
     cursor: default;
     width: 40px;
-    height:33px;
+    height:40px;
     color: #000;
     line-height: 24px;
     border: 1px solid #E5E5E5;
@@ -327,7 +327,7 @@ ul#myList{
 }
 
 form.blackbg{
-	background:rgba(33, 150, 243, 0.58);
+	background:rgba(40, 150, 243, 0.58);
 }
 /*-- //load-more --*/
 .footer-w3l {
@@ -436,7 +436,7 @@ form.blackbg{
 		width: 30px;
 	}
 	.value {
-		width: 33px;
+		width: 40px;
 		height: 25px;
 		padding-top: 6px;
 	}

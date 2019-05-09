@@ -5,7 +5,7 @@ function fetchLocationData($search){
 
   $ServerName = "localhost";
   $Username = "root";
-  $Password = "123456789";
+  $Password = "";
   $dbName = "webdevproject";
    $data[] = array("latitude"=>0.0,"longitude"=>0.0,"name"=>"kfef3ri");
 ;
@@ -21,7 +21,7 @@ function fetchLocationData($search){
     $data = array();
     while ($row = mysqli_fetch_array($fetchData)) {
       $data[] = array('latitude'=>$row["latitude"],'longitude'=>$row["longitude"],'name'=>$row["place_name"]);
-    
+
 
     }
   }
