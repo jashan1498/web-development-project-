@@ -1,151 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Adventure - Free Bootstrap 4 Template by Colorlib</title>
+<html>
+
+<head>
     <meta charset="utf-8">
+    <!--Bootstrap and Jquery-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <title>Flight Finder - Web Development Project</title>
+    <style>
+        .navbar-color-light {
+            color: #c1c1c1 !important;
+        }
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+        .navbar-color-dark {
+            color: #393939 !important;
+        }
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+        .bg-navbar {
+            background-color: #111111;
+        }
 
+        #jumbo {
+            background-image: url('img/bg_1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+        .footer-color {
+            background-color: #222831
+        }
 
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Adventure</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+        .footer-color p {
+            color: rgba(255, 255, 255, 0.7)
+        }
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="places.html" class="nav-link">Places</a></li>
-	          <li class="nav-item"><a href="flight_search_form.php" class="nav-link">Flight Booking</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
+        .footer-color a {
+            color: rgba(255, 255, 255, 0.7)
+        }
 
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-9 ftco-animate mb-5 pb-5 text-center text-md-left" data-scrollax=" properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Discover <br>A new Place</h1>
-            <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Find great places to stay, eat, shop, or visit from local experts</p>
-          </div>
+        .footer-color h5 {
+            color: white;
+        }
+
+        .transparent-navbar {
+            background-color: transparent;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            h1 {
+                font-size: 6em;
+            }
+
+            h3 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            AOS.init({
+                duration: 800
+            })
+            var jumbo = document.getElementById("jumbo");
+            jumbo.style.width = window.innerWidth + "px";
+            jumbo.style.height = window.innerHeight + "px";
+        }
+        window.onresize = function () {
+            var jumbo = document.getElementById("jumbo");
+            jumbo.style.height = window.innerHeight + "px";
+            jumbo.style.width = window.innerWidth + "px"
+        }
+        window.onscroll = function (e) {
+            if (window.scrollY > 220) {
+                $('#navbarId a').removeClass("navbar-color-dark")
+                $('#navbarId a').addClass("navbar-color-light");
+                $('#navbarId').removeClass("animated fadeInUp")
+                $('#navbarId').addClass("fixed-top animated fadeInDown");
+                $('#navbarId').removeClass("transparent-navbar")
+            }
+            if (window.scrollY < 220) {
+                $('#navbarId a').removeClass("navbar-color-light")
+                $('#navbarId a').addClass("navbar-color-dark");
+                $('#navbarId').removeClass("fixed-top animated fadeInDown")
+                $('#navbarId').addClass("transparent-navbar")
+                $("#navbarId").addClass("animated fadeInUp")
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid" id="jumbo">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navbar transparent-navbar" id="navbarId">
+            <div class="container">
+                <a class="navbar-brand navbar-color-dark" href="#">Flight Finder</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link navbar-color-dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="places.html">Places</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="flight_search_form.php">Flight Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-color-dark" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Body-->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-7 col-md-7" style="margin-top: 150px;">
+                    <h1 data-aos="fade-up">Discover A New Place</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-7 col-md-7">
+                    <h3 data-aos="fade-up">Find popular destinations and cheap airways tickets</h3>
+                </div>
+            </div>
+
         </div>
-      </div>
     </div>
 
-
-
-
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Adventure</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+    <!--Footer-->
+    <div class="container-fluid footer-color" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Adventure</h5>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Information</h5>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="contact.html">Online Enquiry</a></p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Experience</h5>
+                    <p><a href="places.html">Places</a></p>
+                    <p><a href="flight_page.php">Flight</a></p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <h5>Have a Questions?</h5>
+                    <p>School of Computer Science, Wuhan University, Wuhan, Hubei, PRC</p>
+                    <p>+86 131 6417 4567</p>
+                    <p>boom@boomapps.com</p>
+                </div>
             </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Information</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">About Us</a></li>
-                <li><a href="#" class="py-2 d-block">Online enquiry</a></li>
-                <li><a href="#" class="py-2 d-block">Call Us</a></li>
-                <li><a href="#" class="py-2 d-block">General enquiries</a></li>
-                <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
-                <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-                <li><a href="#" class="py-2 d-block">Refund policy</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Experience</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Beach</a></li>
-                <li><a href="#" class="py-2 d-block">Adventure</a></li>
-                <li><a href="#" class="py-2 d-block">Wildlife</a></li>
-                <li><a href="#" class="py-2 d-block">Honeymoon</a></li>
-                <li><a href="#" class="py-2 d-block">Nature</a></li>
-                <li><a href="#" class="py-2 d-block">Party</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
         </div>
+    </div>
+</body>
 
-      </div>
-    </footer>
-
-
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-
-  </body>
 </html>

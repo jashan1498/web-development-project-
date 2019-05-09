@@ -5,7 +5,7 @@ function fetchLocationData($search){
 
   $ServerName = "localhost";
   $Username = "root";
-  $Password = "";
+  $Password = "123456789";
   $dbName = "webdevproject";
    $data[] = array("latitude"=>0.0,"longitude"=>0.0,"name"=>"kfef3ri");
 ;

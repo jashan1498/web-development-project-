@@ -54,7 +54,7 @@
       }
       function reduceLen($str){
         if (strlen($str) > 15 ) {
-        $str =   split(",",$str)[0];
+        $str =   explode(",",$str)[0];
         }
         return $str;
 
