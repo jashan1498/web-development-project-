@@ -575,9 +575,8 @@ include_once "includes/database_connect.php";
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-3 col-lg-3 col-md-3">
-					<h5>Adventure</h5>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-						live the blind texts.</p>
+					<h5>Flight Finder</h5>
+					<p>This sites allow users to find cheap flight with ease</p>
 				</div>
 				<div class="col-xl-3 col-lg-3 col-md-3">
 					<h5>Information</h5>
