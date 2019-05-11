@@ -115,7 +115,7 @@
             background-position: center center;
             margin-top: -60px;
             border: 6px solid #01143f;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
 
         .owl-stage-outer {
@@ -158,7 +158,18 @@
 
             $(".owl-carousel").owlCarousel({
                 margin: 10,
-                loop: true
+                loop: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                }
             });
             var jumbo = document.getElementById("jumbo");
             jumbo.style.width = window.innerWidth + "px";
@@ -241,10 +252,10 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-6" id="flight-finder-left">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" id="flight-finder-left">
 
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                 <h3 data-aos="fade-up" style="margin-top: 80px; margin-left: 30px;">The Flight Finder</h3>
                 <p data-aos="fade-up" style="margin-top: 30px; margin-left: 30px;">This project allows its user to find cheap flight from various destination around the world. with easy to use and beautifuly designed interface that works both on mobile and desktop.</p>
             </div>
@@ -260,13 +271,13 @@
             </div>
         </div>
         <div class="row justify-content-center" style="margin-top:100px;">
-            <div class="col-xl-8">
+            <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12">
                 <div class="row owl-carousel">
                     <div data-aos="fade-up" class="team-member-carousel">
                         <div style="background-image: url('img/jashan_img2.jpg')" class="image-round image-carousel-size">
                         </div>
                         <p>In this project I was responsible for the html , css and php  of several web pages in the project, and also the databases for the flight booking.</p>
-                        <h4>Jashan Deep Singh (性格)</h4>
+                        <h4>Jashan Deep Singh (信格)</h4>
                         <h5>2016326660212</h5>
 
                     </div>
@@ -294,28 +305,28 @@
         <div class="row justify-content-center">
             <div class="col-xl-8">
                 <div class="row">
-                    <div data-aos="fade-up" class="col-xl-3">
+                    <div data-aos="fade-up" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div class="icon">
                             <span class="icon-dollar"></span>
                         </div>
                         <h4>Cheap Tickets</h4>
                         <p>This project allows people to get cheap flight tickets to their favourite destinations</p>
                     </div>
-                    <div data-aos="fade-up" class="col-xl-3">
+                    <div data-aos="fade-up" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div class="icon">
                             <span class="flaticon-around"></span>
                         </div>
                         <h4>Good Places Selection</h4>
                         <p>This project offers very complete data on cities and places around the world, with over 10 thousand cities available to choose.</p>
                     </div>
-                    <div data-aos="fade-up" class="col-xl-3">
+                    <div data-aos="fade-up" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div class="icon">
                             <span class="icon-people"></span>
                         </div>
                         <h4>Ease of Use</h4>
                         <p>This project has simplify the ticket buying experience for the user, compared to traditional webistes that are heavy to load.</p>
                     </div>
-                    <div data-aos="fade-up" class="col-xl-3">
+                    <div data-aos="fade-up" class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                         <div class="icon">
                             <i class="icon-stay_primary_landscape"></i>
                         </div>
